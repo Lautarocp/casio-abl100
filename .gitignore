@@ -1,0 +1,34 @@
+# Xcode
+# *.xcodeproj/ is committed on purpose
+*.xcworkspace/
+DerivedData/
+Build/
+*.o
+*.linkmap
+*.hmap
+
+# Swift
+.build/
+*.swiftdeps
+*.swiftmodule
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project specifics
+build/
+.swiftpm/xcode/
+
+# Logs
+*.log
+
+# Local notes for Claude Code
+CLAUDE.md
