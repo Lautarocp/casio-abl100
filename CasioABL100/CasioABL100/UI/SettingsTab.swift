@@ -94,7 +94,7 @@ struct SettingsTab: View {
             } message: {
                 Text("Para volver a usarlo, pulsa \"Conectar reloj\" y un botón del reloj con la app abierta.")
             }
-            .onChange(of: watchManager.longPressAction) { action in
+            .onReceive(watchManager.$longPressAction.dropFirst()) { action in
                 if action == .playSong { SongPlayer.requestAuthorization() }
             }
             .onReceive(watchManager.$settings) { settings = $0 }
